@@ -1,5 +1,7 @@
 import express, { Request, Response } from "express";
 import path from "path";
+import swaggerUi from 'swagger-ui-express';
+import { specs } from './config/swagger';
 import contactMessageRoutes from "./routes/contact_message.routes"
 import parkingRoutes from "./routes/parking.routes"
 import parkingSlotRoutes from "./routes/parking_slot.routes"
@@ -15,6 +17,9 @@ app.use(express.json());
 
 // Servir arquivos estáticos da pasta public
 app.use(express.static(path.join(__dirname, '../public')));
+
+// Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // Rota principal que retorna o HTML
 app.get('/', (req: Request, res: Response) => {
