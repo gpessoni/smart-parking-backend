@@ -9,7 +9,7 @@ import parkingSensorDataRoutes from "./routes/parking_sensor_data.routes"
 import sensorsDataRoutes from "./routes/sensors_data.routes"
 
 const app = express();
-const port = 8080;
+const port = 4000;
 
 app.use(express.json());
 
