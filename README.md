@@ -2,16 +2,6 @@
 
 Sistema de backend para gerenciamento de estacionamentos inteligentes com monitoramento de sensores em tempo real.
 
-## 📋 Índice
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação)
-- [Configuração](#configuração)
-- [Uso](#uso)
-- [API Endpoints](#api-endpoints)
-
 ## 🎯 Sobre o Projeto
 
 O Smart Parking Backend é uma API RESTful desenvolvida em Node.js com TypeScript que gerencia estacionamentos inteligentes. O sistema permite:
